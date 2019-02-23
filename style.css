@@ -14,6 +14,9 @@ body{
 	margin: 0 auto;
 	width: 1170px;
 }
+.logo{
+	margin-top: 5px;
+}
 [class*="col-"]{
 	float: left;
 }
@@ -47,4 +50,53 @@ body{
 .menu a:hover{
 	background-color: #2c71b8;
 	color: white;
+}
+.search input[type="text"]{
+	background-color: rgba(255,255,255,0);
+	border:none;
+	font-size: 21px;
+	line-height: 38px;
+	padding:  0 0 0 20px;
+	width:80%;
+}
+.search form{
+	border: 1px solid #2c71b8;
+}
+.search{
+	width: 66.7%;
+	margin: 5 0 0 30px;
+	display: inline-block;
+}
+.basket{
+	position: relative;
+	float: right;
+	margin-top: 5px;
+}
+.search input::placeholder{
+	color: #2c71b8;
+}
+.basket-img{
+	background: url(images/basket.png) no-repeat center;
+	background-color: white;
+	width: 40px;
+	height: 40px;
+	padding-right: 30px;
+}
+.number{
+	background-color: #2c71b8;
+	border-radius: 20px;
+	padding: 4 5px;
+	position: absolute;
+	top: -7px;
+	left: -9px;
+	color: white;
+	font-size: 10px;
+}
+button{
+	background-color: #2c71b8;
+	border:none;
+	padding: 9px;
+	float:right;
+	margin-top: 4px;
+	margin-right: 4px;
 }
