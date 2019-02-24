@@ -53,6 +53,7 @@ a{
 	background-color: #2c71b8;
 	color: white;
 }
+
 .search input[type="text"]{
 	background-color: rgba(255,255,255,0);
 	border:none;
@@ -105,8 +106,8 @@ button{
 	transform: rotate(90deg);
 	font-size: 20px;
 	float: right;
+	font-weight: bold;
 	margin-right: 15px;
-
 }
 .down-menu{
 	position: relative;
@@ -115,21 +116,35 @@ button{
 	display:none;
 	position: absolute;
 	background-color: #2c71b8;
+	top: 50px;
+	left:-1px;
 }
- .menu>.down-menu>.drop-down-menu li{
+.drop-down-menu li{
 	float: none;
-	width: 290px;
-	padding: 10 0 10 30px;
+	width: 293px;
+	border: none;
 }
 .down-menu:hover .drop-down-menu{
 	display: block;
 }
-.drop-down-menu a{
-	color: white;
-}
-.menu>.down-menu>.drop-down-menu li:first-child{
+.drop-down-menu li:first-child{
 	padding-top: 30px;
 }
-.menu>.down-menu>.drop-down-menu li:last-child{
+.drop-down-menu li:last-child{
 	padding-bottom: 30px;
+}
+.drop-down-menu a{
+	color: white;
+	font-size: 21px;
+	display: inline-block;
+	padding: 10 0 10 30px;
+	width: 100%;
+}
+.drop-down-menu a:hover{
+	color: #2c71b8;
+	background-color: white;
+}
+.drop-down-menu:hover .down-menu{
+	background-color: #2c71b8;
+	color: white;
 }
