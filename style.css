@@ -59,13 +59,12 @@ body{
 	padding:  0 0 0 20px;
 	width:80%;
 }
-.search form{
-	border: 1px solid #2c71b8;
-}
+
 .search{
 	width: 66.7%;
 	margin: 5 0 0 30px;
-	display: inline-block;
+	border: 1px solid #2c71b8;
+	float: left;
 }
 .basket{
 	position: relative;
