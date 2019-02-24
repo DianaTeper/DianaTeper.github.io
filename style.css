@@ -38,12 +38,14 @@ body{
 .menu li:last-child{
 	border-right: 1px solid #2c71b8;
 }
-.menu a{
+a{
+   text-decoration: none;
+}
+.menu>li>a{
 	display: block;
 	height: 50px;
 	text-align: center;
 	line-height: 50px;
-	text-decoration: none;
 	font-size: 21px;
 	color: #2c71b8;
 }
@@ -98,4 +100,36 @@ button{
 	float:right;
 	margin-top: 4px;
 	margin-right: 4px;
+}
+.drop-down-symbol{
+	transform: rotate(90deg);
+	font-size: 20px;
+	float: right;
+	margin-right: 15px;
+
+}
+.down-menu{
+	position: relative;
+}
+.drop-down-menu{
+	display:none;
+	position: absolute;
+	background-color: #2c71b8;
+}
+ .menu>.down-menu>.drop-down-menu li{
+	float: none;
+	width: 290px;
+	padding: 10 0 10 30px;
+}
+.down-menu:hover .drop-down-menu{
+	display: block;
+}
+.drop-down-menu a{
+	color: white;
+}
+.menu>.down-menu>.drop-down-menu li:first-child{
+	padding-top: 30px;
+}
+.menu>.down-menu>.drop-down-menu li:last-child{
+	padding-bottom: 30px;
 }
