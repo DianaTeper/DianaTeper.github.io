@@ -127,6 +127,7 @@ button{
 	background-color: #2c71b8;
 	top: 50px;
 	left:-1px;
+	z-index: 10;
 }
 .drop-down-menu li{
 	float: none;
@@ -149,17 +150,21 @@ button{
 	padding: 10 0 10 30px;
 	width: 100%;
 }
-.drop-down-menu a:hover{
+.drop-down-menu a:hover, .hide-sort-menu a:hover
+{
 	color: #2c71b8;
 	background-color: white;
 }
+
+
+
+
 
 .icon-img{
 	position: absolute;
 	top: 10px;
 	right: 10px;
 }
-
 .icon-img div:first-child{
 	margin-bottom: 10px;
 }
@@ -172,6 +177,10 @@ button{
 .page-nav{
 	margin: 30 0;
 	font-size: 14px;
+	color: rgba(255,255,255,0.5);
+	
+}
+.page-nav>a{
 	color: rgba(255,255,255,0.5);
 }
 .article{
@@ -189,12 +198,16 @@ h1,h2, .bold, .price{
 h1{
 	font-size:48px;
 	margin-bottom: 50px;
+	float: left;
 }
+
 .article-img{
-	background-color: white;
+	background-color: rgba(255,255,255,0.75);
 	height: 180px;
 	position: relative;
-	text-align: center;
+    display: flex;
+	align-items: center;
+    justify-content: center;
 }
 [class*="back"]{
 	border: 1px solid #2c71b8;
@@ -202,11 +215,20 @@ h1{
 	height: 30px;
 	width: 30px;
 }
-.back-img1{
-	background: url(images/main-img.png) no-repeat center;
-}
 .back-img{
-	background: url(images/main-img1.png) no-repeat center;
+	background: url(images/img.png) no-repeat center; 
+}
+.back-img1{
+	background: url(images/img1.png) no-repeat center;
+}
+.back-img2{
+	background: url(images/img2.png) no-repeat center;
+}
+.back-img3{
+	background: url(images/img3.png) no-repeat center;
+}
+.back-img2, .back-img3{
+	background-color: #2c71b8;
 }
 .main-content{
 	font-size: 21px;
@@ -231,15 +253,44 @@ h2{
 	padding: 15 30px;
 	margin-top: 10px;
 }
-.main-content .bord a{
+.main-content .bord a, sort{
 	color: white;
 }
 .button{
 	background: url(images/basket1.png) no-repeat;
-	background-position: 145px 16px;
+	background-position: 165px 16px;
 	margin-bottom: 26px;
 
 }
 .text-upper{
 	text-transform: uppercase;
+}
+
+.sort, .article, .hide-sort-menu>div{
+	border: 1px solid white;
+}
+.sort,.hide-sort-menu>div>a{
+	padding: 10 0 10 20px;
+}
+.hide-sort-menu{
+	display: none;
+	position: absolute;
+	width: 100%;
+	z-index: 10;
+
+
+}
+.sort-menu:hover .hide-sort-menu{
+	display: block;
+}
+.hide-sort-menu>div>a{
+	width: 100%;
+	color:white;
+	display: block;
+}
+.sort-menu{
+	position: relative;
+}
+.sort-menu, .hide-sort-menu>div{
+		background-color: #2c71b8;
 }
