@@ -237,8 +237,8 @@ h1{
 .main-content p{
 	margin-bottom: 18px;
 }
+
 h2{
-	margin-top: 10px;
 	font-size: 30px;
 }
 .price{
@@ -260,7 +260,12 @@ h2{
 	background: url(images/basket1.png) no-repeat;
 	background-position: 165px 16px;
 	margin-bottom: 26px;
+	width: 210px;
 
+}
+.detail, .button{
+	width: 210px;
+	margin: 0 auto;
 }
 .text-upper{
 	text-transform: uppercase;
@@ -277,8 +282,6 @@ h2{
 	position: absolute;
 	width: 100%;
 	z-index: 10;
-
-
 }
 .sort-menu:hover .hide-sort-menu{
 	display: block;
@@ -292,5 +295,15 @@ h2{
 	position: relative;
 }
 .sort-menu, .hide-sort-menu>div{
-		background-color: #2c71b8;
+	background-color: #2c71b8;
+}
+.sort .drop-down-symbol{
+	top: 79px;
+	right: -55px;
+}
+sup {
+	font-size: 60%;
+    position: relative;
+  	top: -20px;
+  	left: -4px;
 }
