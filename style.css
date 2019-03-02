@@ -26,6 +26,9 @@ body{
 .col-md-6{
 	width: 50%;
 }
+.col-md-9{
+	width: 75%;
+}
 .header{
 	background-color: rgba(255,255,255,0.75);
 	padding: 25px 0;
@@ -151,3 +154,92 @@ button{
 	background-color: white;
 }
 
+.icon-img{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+.icon-img div:first-child{
+	margin-bottom: 10px;
+}
+.main{
+	color: white;
+}
+.text-dec-und{
+	text-decoration: underline;
+}
+.page-nav{
+	margin: 30 0;
+	font-size: 14px;
+	color: rgba(255,255,255,0.5);
+}
+.article{
+	width: 272px;
+	float: left;
+	margin-right: 30px;
+}
+.article:nth-child(3), .article:nth-child(6), .article:nth-child(9){
+	margin-right: 0px;
+}
+
+h1,h2, .bold, .price{
+	font-weight: bold;
+}
+h1{
+	font-size:48px;
+	margin-bottom: 50px;
+}
+.article-img{
+	background-color: white;
+	height: 180px;
+	position: relative;
+	text-align: center;
+}
+[class*="back"]{
+	border: 1px solid #2c71b8;
+	left: 0px;
+	height: 30px;
+	width: 30px;
+}
+.back-img1{
+	background: url(images/main-img.png) no-repeat center;
+}
+.back-img{
+	background: url(images/main-img1.png) no-repeat center;
+}
+.main-content{
+	font-size: 21px;
+	margin: 15px;
+}
+.main-content p{
+	margin-bottom: 18px;
+}
+h2{
+	margin-top: 10px;
+	font-size: 30px;
+}
+.price{
+	font-size: 48px;
+	margin-top: 30px;
+}
+.text-center{
+	text-align: center;
+}
+.main-content .bord{
+	border: 1px white solid;
+	padding: 15 30px;
+	margin-top: 10px;
+}
+.main-content .bord a{
+	color: white;
+}
+.button{
+	background: url(images/basket1.png) no-repeat;
+	background-position: 145px 16px;
+	margin-bottom: 26px;
+
+}
+.text-upper{
+	text-transform: uppercase;
+}
