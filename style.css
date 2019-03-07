@@ -30,10 +30,10 @@ body{
 	width: 75%;
 }
 .col-md-2{
-	width: 20%;
+	width: 22%;
 }
 .col-md-10{
-	width: 80%;
+	width: 78%;
 }
 .header{
 	background-color: rgba(255,255,255,0.75);
@@ -201,8 +201,9 @@ button{
 .article{
 	width: 272px;
 	float: left;
-	margin-right: 30px;
+	margin-right: 32px;
 	margin-top: 30px;
+	position: relative;
 }
 .article:nth-child(3), .article:nth-child(6), .article:nth-child(9){
 	margin-right: 0px;
@@ -247,7 +248,8 @@ h1{
 }
 .main-content{
 	font-size: 21px;
-	margin: 15px;
+	padding: 15px;
+	background-color: rgba(104,113,184,0.35);
 }
 .main-content p{
 	margin-bottom: 18px;
@@ -329,9 +331,25 @@ sup {
 }
 h3>a{
 	color: white;
-	padding-top: 30px;
 }
 h3{
 	font-size: 36px;
-	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 90px;
+}
+
+.line1{
+	transform: rotate(34deg);
+	
+}
+.line2{
+	transform: rotate(146deg);
+}
+.line1, .line2{
+	border-top: 1px solid white;
+	width: 325px;
+	top: 90px;
+	right: -27px;
+	position: absolute;
+	z-index: -10;
 }
