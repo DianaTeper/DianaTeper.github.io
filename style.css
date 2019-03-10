@@ -64,7 +64,6 @@ a{
 	background-color: #2c71b8;
 	color: white;
 }
-
 .search input[type="text"]{
 	background-color: rgba(255,255,255,0);
 	border:none;
@@ -172,7 +171,6 @@ a{
 .bord-right{
 	border-right: 1px solid white;
 }
-
 .bord{
 	border: 1px solid white;
 }
@@ -287,7 +285,7 @@ h2{
 	text-align: center;
 }
 
-.text-upper{
+.text-upper,h4{
 	text-transform: uppercase;
 }
 
@@ -354,7 +352,12 @@ h3{
 	position: absolute;
 	z-index: -10;
 }
-
+.slide{
+	width: 100%;
+	font-size: 100px;
+	text-align: center;
+	height: 400px;
+}
 .back-img1:hover{
 	background: url(images/img2.png) no-repeat center;
 }
@@ -363,4 +366,61 @@ h3{
 }
 .back-img:hover, .back-img1:hover{
 	background-color: #2c71b8;
+}
+
+input[type="checkbox"]{
+	display: none;
+	float: left;
+}
+
+label{
+	display: block;
+	margin-left: 30px;
+}
+h4{
+	margin-top: 30px;
+}
+.sect{
+   padding-left: 30px;
+   background-color: rgba(255,255,255,0.15);
+}
+label:before{
+	content: " ";
+	display: block;
+	float: left;
+	width: 10px;
+	height: 10px;
+	border: 1px solid white;
+	position: absolute;
+	top: 5px;
+	left:2px;
+}
+input[type="checkbox"]:checked + label:before{
+	background-color: white;
+}
+.item{
+	display: block;
+	position: relative;
+	margin-top: 20px;
+}
+.marg{
+	margin-top: 60px;
+}
+form a{
+	color: white;
+	display: block;
+	margin: 25 0 25 0px;
+}
+form{
+	font-size: 21px;
+}
+input[type=submit]{
+	display: block;
+	background-color: #2c71b8;
+	color: white;
+	text-transform: uppercase;
+	padding: 15 60px;
+	font-size: 21px;
+	margin-bottom: 30px;
+
 }
