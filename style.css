@@ -288,12 +288,17 @@ h2{
 	text-align: left;
 	display: block;
 	margin:auto;
+	margin-top: 10px;
 }
+
 .detail{
 	background-color: rgba(255,255,255,0);
 	text-align: center;
 }
 
+.detail:hover, .button:hover,input[type="submit"]:hover{
+	background-color: rgba(255,255,255,0.6);
+}
 .text-upper,h4{
 	text-transform: uppercase;
 }
@@ -433,4 +438,14 @@ input[type=submit]{
 	font-size: 21px;
 	margin-bottom: 30px;
 
+}
+.bkblue{
+	
+	background: url(images/img2.png) no-repeat center;
+	background-color: #2c71b8;
+}
+
+.bkwhite{
+	background: url(images/img1.png) no-repeat center;
+	background-color: none;
 }
